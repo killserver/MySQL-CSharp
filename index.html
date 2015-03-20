@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mysql-csharp by killserver</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Mysql-csharp</h1>
+        <p>Help in work for MySQL in C#</p>
+        <p class="view"><a href="https://github.com/killserver/MySQL-CSharp">View the Project on GitHub <small>killserver/MySQL-CSharp</small></a></p>
+        <ul>
+          <li><a href="https://github.com/killserver/MySQL-CSharp/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/killserver/MySQL-CSharp/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/killserver/MySQL-CSharp">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="mysqli-constructor" class="anchor" href="#mysqli-constructor" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySqli Constructor</h1>
+
+<h2>
+<a id="Описание" class="anchor" href="#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Описание:</h2>
+
+<hr>
+
+<div class="highlight highlight-csharp"><pre>MySqli(<span class="pl-st">string</span> serverdb, <span class="pl-st">string</span> userdb, <span class="pl-st">string</span> passdb, <span class="pl-st">string</span> selectdbs)</pre></div>
+
+<p>Создаёт объект работы с базой данных</p>
+
+<h2>
+<a id="Список-параметров" class="anchor" href="#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Список параметров</h2>
+
+<hr>
+
+<h3>
+<a id="serverdb" class="anchor" href="#serverdb" aria-hidden="true"><span class="octicon octicon-link"></span></a>serverdb</h3>
+
+<blockquote>
+<p>Переменная отвечающая за адрес сервера Базы Данных</p>
+</blockquote>
+
+<h3>
+<a id="userdb" class="anchor" href="#userdb" aria-hidden="true"><span class="octicon octicon-link"></span></a>userdb</h3>
+
+<blockquote>
+<p>Переменная отвечающая за имя пользователя сервера Базы Данных</p>
+</blockquote>
+
+<h3>
+<a id="passdb" class="anchor" href="#passdb" aria-hidden="true"><span class="octicon octicon-link"></span></a>passdb</h3>
+
+<blockquote>
+<p>Переменная отвечающая за пароль к серверу Базы Данных</p>
+</blockquote>
+
+<h3>
+<a id="selectdbs" class="anchor" href="#selectdbs" aria-hidden="true"><span class="octicon octicon-link"></span></a>selectdbs</h3>
+
+<blockquote>
+<p>Переменная отвечающая за имя базы данных внутри сервера</p>
+</blockquote>
+
+<h2>
+<a id="Пример" class="anchor" href="#%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80" aria-hidden="true"><span class="octicon octicon-link"></span></a>Пример:</h2>
+
+<hr>
+
+<div class="highlight highlight-csharp"><pre><span class="pl-k">using</span> KilleR.MySqli;
+
+<span class="pl-k">namespace</span> <span class="pl-en">ConsoleApplication1</span>
+{
+    <span class="pl-s">class</span> <span class="pl-en">Program</span>
+    {
+        <span class="pl-s">static</span> <span class="pl-st">void</span> <span class="pl-en">Main</span>(<span class="pl-st">string[]</span> <span class="pl-vpf">args</span>)
+        {
+            MySqli Test = <span class="pl-s">new</span> MySqli(<span class="pl-s1"><span class="pl-pds">"</span>127.0.0.1<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>root<span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>, <span class="pl-s1"><span class="pl-pds">"</span>mysql<span class="pl-pds">"</span></span>);
+            Console.WriteLine(Test.Version());
+            Console.ReadLine();
+        }
+    }
+}</pre></div>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/killserver">killserver</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
